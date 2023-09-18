@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Atur tempo pembayaran bisnis serta kirim & terima pembayaran dengan kartu kredit, invoice juga langsung sah dengan e-Meterai. Coba Sekarang!">
+        <title>Platform Pembayaran Bisnis & Invoice Digital GRATIS | Paper.id </title>
+        <link rel="shortcut icon" href="https://storage.googleapis.com/clevertap-assets/landing-page/favicon-16x16.png">
+        <link rel="shortcut icon" href="https://storage.googleapis.com/clevertap-assets/landing-page/favicon-32x32.png">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:400,600" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/common.css">
+    </head>
+    <body>
+        <header class="mainNav">
+            <div class="containerNav">
+                <a href="#" class="logoNav">
+                    <img src="./assets/images/Logo.png" alt="Paper.id" />
+                </a>
+                <ul class="listMenu">
+                    <li class="itemMenu">
+                        <a href="#" class="linkText">Produk</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="#" class="linkText">Solusi Bisnis</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="#" class="linkText">Cara Kerja</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="#" class="linkText">Harga</a>
+                    </li>
+                    <li class="itemMenu">
+                        <a href="#" class="linkText">Perusahaan</a>
+                    </li>
+                </ul>
+                <div class="btn-area">
+                    <a href="#" class="btn-base">LOGIN</a>
+                    <a href="#" class="btn-base primary">DAFTAR</a>
+                </div>
+                <button class="btn burgerNav" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="mobile-menu">
+                    <ul>
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                        <li>
+                            <div class="btn-area">
+                                <a href="#" class="btn-base">LOGIN</a>
+                                <a href="#" class="btn-base primary">DAFTAR</a>
+                            </div>
+                        </li>
+                        <li><a href="#" class="linkText">Produk</a></li>
+                        <li><a href="#" class="linkText">Solusi Bisnis</a></li>
+                        <li><a href="#" class="linkText">Cara Kerja</a></li>
+                        <li><a href="#" class="linkText">Harga</a></li>
+                        <li><a href="#" class="linkText">Perusahaan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="first-section">
+            <div class="mainContainer">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 title-col m-auto">
+                        <h5>Simulasikan Pembayaran Lebih Cepat dengan</h5>
+                        <h1>API Embeded Financing Paper!</h1>
+                    </div>
+                    <div class="col-md-12 col-lg-6 wGrid">
+                        <div class="formContainer">
+                            <form class="formGroup step-1">
+                                <div class="headForm">
+                                    <h1>Lihat Simulasi Pinjaman Anda</h1>
+                                </div>
+                                <div class="rowField xl">
+                                    <label for="jmlPinjaman" class="form-label">Jumlah Pinjaman</label>
+                                    <input type="text" id="jmlPinjaman" class="form-control simpleField base" placeholder="Rp 0">
+                                </div>
+                                <div class="rowField xl">
+                                    <label for="jmlFee" class="form-label">Estimasi Fee</label>
+                                    <span id="jmlFee" class="valueField">0%</span>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" id="step-1" class="btn btn-base btn-mid form-submit enable">Daftar Sekarang</button>
+                                </div>
+                            </form>
+                            <form class="formGroup step-2" style="display: none;">
+                                <div class="headForm">
+                                    <ul class="stepper">
+                                        <li class="step one active"><span>Isi Form</span></li>
+                                        <li class="step two"><span>Pilih Penawaran</span></li>
+                                        <li class="step three"><span>Tanda Tangan Dokumen</span> </li>
+                                    </ul>
+                                </div>
+                                <h2 class="formTitle">Data Diri Lengkap</h2>
+                                <div class="rowField">
+                                    <label for="nama" class="form-label">Nama Lengkap</label>
+                                    <input type="text" id="nama" class="form-control simpleField" placeholder="cth. Priska Aprilia">
+                                </div>
+                                <div class="rowField">
+                                    <label for="alamat" class="form-label">Alamat Lengkap</label>
+                                    <input type="text" id="alamat" class="form-control simpleField" placeholder="cth. Jl. Sunter Garden Raya No.5D, RT.6/RW.12">
+                                </div>
+                                <div class="rowField row">
+                                    <div class="col-md-4">
+                                        <label for="tglLahir" class="form-label">Tanggal Lahir</label>
+                                        <input type="text" id="tglLahir" class="form-control simpleField form-date" placeholder="Piih Tanggal" onfocus="(this.type = 'date')">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="noTlp" class="form-label">No. Telp</label>
+                                        <input type="text" id="noTlp" class="form-control simpleField" placeholder="cth. 08123456789">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="tlpPerusahaan" class="form-label">No. Telp Perusahaan</label>
+                                        <input type="text" id="tlpPerusahaan" class="form-control simpleField" placeholder="cth. 021998997">
+                                    </div>
+                                </div>
+                                <div class="rowField row">
+                                    <div class="col-md-4">
+                                        <label for="noKtp" class="form-label">No. KTP</label>
+                                        <input type="text" id="noKtp" class="form-control simpleField" placeholder="cth. 327123456789">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="noNpwp" class="form-label">No. NPWP</label>
+                                        <input type="text" id="NoNpwp" class="form-control simpleField" placeholder="cth. 990998997996">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="jmlPinjaman2" class="form-label">Jumlah Pinjaman</label>
+                                        <input type="text" id="jmlPinjaman2" class="form-control simpleField" placeholder="Rp 0">
+                                    </div>
+                                </div>
+                                <div class="rowField">
+                                    <label for="perusahaan" class="form-label">Nama Perusahaan</label>
+                                    <input type="text" id="perusahaan" class="form-control simpleField" placeholder="cth. PT Pembangunan Sejahtera">
+                                </div>
+                                <div class="rowField">
+                                    <label for="almPerusahaan" class="form-label">Alamat Perusahaan</label>
+                                    <input type="text" id="almPerusahaan" class="form-control simpleField" placeholder="cth. Jl Otto Iskandardinata 30, DKI Jakarta">
+                                </div>
+                                <h2 class="formTitle">Unggah Dokumen Pribadi</h2>
+                                <div class="rowField fieldUpload">
+                                    <div class="col-upload">
+                                        <div class="preview-cont">
+                                            <div id="divImageMediaPreview" class="prev-file"></div>
+                                            <div class="grp-file">
+                                                <span class="name-file">Foto e-KTP</span>
+                                                <span id="file-upload-filename" class="file-message">Foto belum diunggah</span>
+                                            </div>
+                                        </div>
+                                        <div class="btn-upload">
+                                            <input type="file" id="upload1" class="file-input" accept=".jfif,.jpg,.jpeg,.png,.gif">
+                                        </div>
+                                    </div>
+                                    <div class="col-upload">
+                                        <div class="preview-cont">
+                                            <canvas id="pdfViewer" class="prev-file docs"></canvas>
+                                            <div class="grp-file">                  
+                                                <span class="name-file">Dokumen Legal</span>
+                                                <label for="myPdf" class="file-message">Dokumen belum diunggah</label>
+                                            </div>
+                                        </div>
+                                        <div class="btn-upload">
+                                            <input type="file" id="myPdf" class="file-input-pdf">
+                                        </div> 
+                                    </div>
+                                </div>
+                                
+                                <div class="btn-area">
+                                    <button type="button" id="step-2" class="btn btn-base btn-mid form-submit enable">Simpan</button>
+                                </div>
+                            </form>
+                            <form class="formGroup step-3" style="display: none;">
+                                <div class="headForm">
+                                    <ul class="stepper">
+                                        <li class="step one active"><span>Isi Form</span></li>
+                                        <li class="step two active"><span>Pilih Penawaran</span></li>
+                                        <li class="step three"><span>Tanda Tangan Dokumen</span> </li>
+                                    </ul>
+                                </div>
+                                <div class="rowField box-field">
+                                    <label class="form-label">Jumlah Pinjaman</label>
+                                    <span class="valueField">Rp 5.000.000</span>
+                                </div>
+                                <h1 class="formTitle">Pilih penawaran untuk pinjaman Anda</h1>
+                                <div class="rowField box-check">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                                        <label class="form-check-label" for="flexCheck1">
+                                            <img src="./assets/images/koin.png" width="154" height="24" alt="koin" />
+                                            <ul class="list-dtl">
+                                                <li>
+                                                    <span class="label">Jumlah Pinjaman</span>
+                                                    <span class="value">Rp 3.000.000</span>
+                                                </li>
+                                                <li>
+                                                    <span class="label">Fee</span>
+                                                    <span class="value">1.1%</span>
+                                                </li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="rowField box-check">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                                        <label class="form-check-label" for="flexCheck2">
+                                            <img src="./assets/images/inves.png" width="86" height="24" alt="koin" />
+                                            <ul class="list-dtl">
+                                                <li>
+                                                    <span class="label">Jumlah Pinjaman</span>
+                                                    <span class="value">Rp 2.000.000</span>
+                                                </li>
+                                                <li>
+                                                    <span class="label">Fee</span>
+                                                    <span class="value">1.1%</span>
+                                                </li>
+                                            </ul>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" id="step-3" class="btn btn-base btn-mid form-submit enable">Simpan</button>
+                                </div>
+                            </form>
+                            <form class="formGroup step-4" style="display: none;">
+                                <div class="headForm">
+                                    <ul class="stepper">
+                                        <li class="step one active"><span>Isi Form</span></li>
+                                        <li class="step two active"><span>Pilih Penawaran</span></li>
+                                        <li class="step three active"><span>Tanda Tangan Dokumen</span> </li>
+                                    </ul>
+                                </div>
+                                <h1 class="formTitle">Silahkan unggah tanda tangan Anda</h1>
+                                <div class="rowField">
+                                    <fieldset class="upload_dropZone text-center mb-3 p-4">
+
+                                        <legend class="visually-hidden">Image uploader</legend>
+                                    
+                                        <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Icon Upload">
+                                            <g id="Group 2881">
+                                            <g id="Icon Download">
+                                            <path id="Path 991" opacity="0.15" fill-rule="evenodd" clip-rule="evenodd" d="M1.66663 19.2671V19.4004C1.66663 20.6004 2.59996 21.5338 3.66663 21.5338H22.0666C23.1333 21.5338 24.0666 20.6004 24.0666 19.5338V14.0671C23.4 13.5338 22.6 13.2671 21.8 12.8671C19.2666 12.0671 16.6 12.2004 14.2 13.5338C12.7333 14.7338 11.2666 15.6671 9.53329 16.3338C7.26663 17.0004 3.93329 14.2004 1.66663 18.2004C1.79996 18.4671 1.79996 18.8671 1.66663 19.2671Z" fill="#4199D5"/>
+                                            <path id="Path 992" d="M24.3333 13.9336V19.1336C24.3333 20.6003 23.2666 21.6669 21.8 21.6669H4.19996C2.73329 21.6669 1.66663 20.4669 1.66663 19.1336V13.9336" stroke="#4199D5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path id="Path 993" d="M6.86633 6.7334L12.2777 1.08678C12.6714 0.675984 13.328 0.675984 13.7217 1.08678L19.133 6.7334" stroke="#4199D5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path id="Line 370" d="M13.0001 1.53353V14.2002" stroke="#4199D5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            </g>
+                                            </g>
+                                        </svg>
+                                            
+                                    
+                                        <p class="nm-upload small my-2">Unggah file Anda di sini</p>
+                                    
+                                        <input id="upload_image_background" data-post-name="image_background" class="position-absolute invisible" type="file" accept="image/jpeg, image/png, image/svg+xml" />
+                                        <div class="upload_gallery d-flex flex-wrap justify-content-center gap-3 m-3"></div>
+                                        <label class="btn-base sm-btn outline blue  m-auto" for="upload_image_background">Unggah File</label>
+                                    
+                                        
+                                    
+                                    </fieldset>
+                                </div>
+                                <div class="btn-area">
+                                    <button type="button" id="step-4" class="btn btn-base btn-mid form-submit enable">Simpan</button>
+                                </div>
+                            </form>
+                            <div id="for-step-2" class="overlayForm" style="display: none;">
+                                <div class="confirm-Pop">
+                                    <div class="title">
+                                        <h1>Pengajuan Anda Berhasil Diajukan!</h1>
+                                        <p>Data pengajuan Anda telah kami terima dan akan diproses dalam waktu 2x24 jam.</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="196" height="154" viewBox="0 0 196 154" fill="none">
+                                            <mask id="mask0_1025_792" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="1" width="196" height="152">
+                                              <path d="M195.065 1.07129H0.935547V152.426H195.065V1.07129Z" fill="white"/>
+                                            </mask>
+                                            <g mask="url(#mask0_1025_792)">
+                                              <g opacity="0.5">
+                                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M194.954 61.9683C194.842 63.977 194.619 65.9857 194.397 67.9944C194.174 69.8915 193.84 71.7886 193.406 73.7973C192.96 75.5828 192.526 77.4799 192.08 79.2654C191.635 80.8277 191.201 82.2784 190.644 83.8408C190.421 84.3987 190.198 85.0683 189.976 85.6263C189.642 86.519 189.307 87.4118 188.984 88.3045C188.65 89.0857 188.316 89.8668 187.993 90.648C187.325 92.0987 186.557 93.661 185.777 95.2234C184.563 97.5668 183.227 99.9103 181.79 102.254C181.122 103.481 180.354 104.597 179.574 105.713C178.906 106.718 178.138 107.722 177.469 108.726C175.587 111.293 173.705 113.748 171.489 116.203C169.162 118.881 166.623 121.56 163.961 124.126C159.64 128.255 154.996 131.938 150.018 135.275C131.643 147.65 109.727 153.676 87.7104 152.226C69.7809 151.11 54.8359 146.423 42.7752 139.627C34.3672 134.94 26.9504 128.802 20.6362 121.56C18.5314 119.216 16.6494 116.649 14.8787 114.083C13.108 111.851 11.6714 109.507 10.3462 107.052C9.78935 106.16 9.35503 105.155 8.90958 104.151C8.35276 103.035 7.80708 101.919 7.36162 100.803C7.25026 100.691 7.25026 100.58 7.1389 100.468C6.24799 98.348 5.47958 96.2277 4.70003 94.219C3.7089 91.206 2.81799 88.1929 2.26117 85.0683C2.03844 83.6176 1.81571 82.1668 1.59299 80.8277C1.2589 78.261 1.03617 75.806 0.924805 73.2393C0.924805 71.5654 0.924805 69.7799 1.03617 68.2176C1.2589 64.7582 1.81571 61.4103 2.69549 58.1741C2.80685 57.7277 3.02958 57.2813 3.14094 56.835C3.25231 56.5002 3.36367 56.0538 3.5864 55.719C4.03185 54.3799 4.6889 53.0408 5.35708 51.8132C5.69117 51.2552 5.9139 50.6973 6.24799 50.2509C6.58208 49.8045 6.80481 49.3581 7.1389 49.0234C7.36163 48.577 7.58435 48.2422 7.91844 47.9074C8.47526 47.1263 9.13231 46.4567 9.68913 45.7871C10.0232 45.3408 10.3573 45.006 10.7916 44.5596C11.5712 43.7784 12.2282 42.9973 13.0078 42.3277C14.4444 40.9886 15.8809 39.761 17.44 38.5335L17.5514 38.4219C18.7653 37.5292 20.1016 36.6364 21.4269 35.8552C21.6496 35.7437 21.7609 35.6321 21.9837 35.5205C22.6518 35.0741 23.4202 34.7393 24.1997 34.4045C24.8679 34.0697 25.5249 33.735 26.3045 33.5118C28.7434 32.5074 31.1711 31.7263 33.7213 31.2799C40.804 29.8292 48.3322 29.9408 56.4061 30.4987C67.1415 31.1683 78.7679 32.7306 91.8197 31.9494C92.8109 31.9494 93.7018 31.8379 94.5815 31.7263C95.027 31.7263 95.3611 31.6147 95.7954 31.5031H95.9068C97.0093 31.2799 98.2343 31.0567 99.3368 30.7219C99.5595 30.6103 99.7822 30.6103 100.005 30.4987C100.116 30.4987 100.996 30.1639 101.33 30.0523C101.442 30.0523 102.221 29.7176 102.544 29.606C102.767 29.4944 103.869 29.048 103.981 29.048C104.972 28.6016 105.863 28.1552 106.854 27.7089C116.81 22.4639 124.895 13.5476 134.739 8.30264C137.947 6.51713 141.265 5.28959 144.807 4.50843C145.029 4.50843 145.252 4.39684 145.475 4.39684C146.143 4.28524 146.911 4.17365 147.691 4.06206C148.905 3.95046 150.13 3.83887 151.232 3.83887C151.678 3.83887 152.012 3.83887 152.446 3.83887C153.226 3.83887 153.994 3.95046 154.774 3.95046H154.885C156.099 4.06206 157.435 4.28524 158.76 4.62003H158.872C159.317 4.73162 159.752 4.84322 160.308 4.95481C162.19 5.40119 164.072 5.95916 165.843 6.62872C166.066 6.74032 166.289 6.74032 166.511 6.85191C166.957 7.0751 167.502 7.18669 167.948 7.40988C168.393 7.63307 168.839 7.74466 169.273 7.96785C170.487 8.52582 171.601 9.08379 172.703 9.75336C184.329 16.6722 192.849 31.8379 194.619 50.3513C194.731 51.1325 194.731 51.9137 194.842 52.8064C195.176 55.8306 195.176 58.9552 194.954 61.9683Z" fill="url(#paint0_linear_1025_792)"/>
+                                              </g>
+                                              <mask id="mask1_1025_792" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="-4" width="195" height="157">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M195.03 61.9682C194.918 63.9769 194.696 65.9856 194.473 67.9943C194.25 69.8914 193.916 71.7885 193.482 73.7972C193.036 75.5827 192.602 77.4798 192.157 79.2653C191.711 80.8276 191.277 82.2783 190.72 83.8406C190.497 84.3986 190.275 85.0682 190.052 85.6262C189.718 86.5189 189.384 87.4117 189.061 88.3044C188.727 89.0856 188.392 89.8667 188.07 90.6479C187.401 92.0986 186.633 93.6609 185.853 95.2233C184.64 97.5667 183.303 99.9102 181.867 102.254C181.198 103.481 180.43 104.597 179.65 105.713C178.982 106.717 178.214 107.722 177.546 108.726C175.664 111.293 173.782 113.748 171.565 116.203C169.238 118.881 166.699 121.559 164.037 124.126C159.716 128.255 155.072 131.938 150.095 135.274C131.72 147.65 109.803 153.676 87.7866 152.226C69.857 151.11 54.912 146.423 42.8513 139.627C34.4434 134.94 27.0266 128.802 20.7123 121.559C18.6076 119.216 16.7255 116.649 14.9548 114.083C13.1842 111.851 11.7476 109.507 10.4223 107.052C9.86552 106.159 9.43121 105.155 8.98575 104.151C8.42893 103.035 7.88325 101.919 7.4378 100.803C7.32643 100.691 7.32643 100.58 7.21507 100.468C6.32416 98.3479 5.55575 96.2276 4.77621 94.2189C3.78507 91.2059 2.89416 88.1928 2.33734 85.0682C2.11461 83.6175 1.89189 82.1667 1.66916 80.8276C1.33507 78.2609 1.11234 75.8059 1.00098 73.2392C1.00098 71.5653 1.00098 69.7798 1.11234 68.2175C1.33507 64.758 1.89189 61.4102 2.77166 58.174C2.88302 57.7276 3.10575 57.2812 3.21712 56.8349C3.32848 56.5001 3.43984 56.0537 3.66257 55.7189C4.10802 54.3798 4.76507 53.0406 5.43325 51.8131C5.76734 51.2551 5.99007 50.6972 6.32416 50.2508C6.65825 49.8044 6.88098 49.358 7.21507 49.0233C7.4378 48.5769 7.66052 48.2421 7.99461 47.9073C8.55143 47.1262 9.20848 46.4566 9.7653 45.787C10.0994 45.3406 10.4335 45.0059 10.8678 44.5595C11.6473 43.7783 12.3044 42.9972 13.0839 42.3276C14.5205 40.9885 15.9571 39.7609 17.5162 38.5334L17.6276 38.4218C18.8414 37.5291 20.1778 36.6363 21.503 35.8551C21.7258 35.7435 21.8371 35.632 22.0598 35.5204C22.7279 35.074 23.4963 34.7392 24.2759 34.4044C24.9441 34.0696 25.6011 33.7348 26.3807 33.5117C28.8195 32.5073 31.2473 31.7262 33.7975 31.2798C40.8802 29.8291 48.4084 29.9406 56.4823 30.4986C67.2177 31.1682 78.8441 2.7305 91.8959 1.94934C92.887 1.94934 93.7779 1.83775 94.6577 1.72615C95.1032 1.72615 95.4372 1.61456 95.8716 1.50296H95.9829C97.0854 1.27978 98.3104 1.05659 99.4129 0.721805C99.6357 0.610211 99.8584 0.610211 100.081 0.498617C100.192 0.498617 101.072 0.163834 101.406 0.0522401C101.518 0.0522401 102.297 -0.282542 102.62 -0.394136C102.843 -0.50573 103.945 -0.952106 104.057 -0.952106C105.048 -1.39848 105.939 -1.84486 106.93 -2.29124C116.886 -7.53616 124.971 13.5475 134.815 8.30253C138.023 6.51702 141.341 5.28949 144.883 4.50833C145.105 4.50833 145.328 4.39674 145.551 4.39674C146.219 4.28514 146.987 4.17355 147.767 4.06195C148.981 3.95036 150.206 3.83876 151.308 3.83876C151.754 3.83876 152.088 3.83876 152.522 3.83876C153.302 3.83876 154.07 3.95036 154.85 3.95036H154.961C156.175 4.06195 157.511 4.28514 158.837 4.61992H158.948C159.393 4.73152 159.828 4.84311 160.385 4.95471C162.267 5.40108 164.149 5.95905 165.919 6.62862C166.142 6.74021 166.365 6.74021 166.587 6.85181C167.033 7.075 167.579 7.18659 168.024 7.40978C168.47 7.63297 168.915 7.74456 169.349 7.96775C170.563 8.52572 171.677 9.08369 172.779 9.75326C184.406 16.6721 192.925 31.8377 194.696 50.3512C194.807 51.1324 194.807 51.9135 194.918 52.8063C195.252 55.8305 195.252 58.9551 195.03 61.9682Z" fill="white"/>
+                                              </mask>
+                                              <g mask="url(#mask1_1025_792)">
+                                                <path d="M61.8696 132.318H45.9473V156.374H61.8696V132.318Z" fill="#E6CDBB"/>
+                                                <path d="M149.396 132.318H133.486V156.374H149.396V132.318Z" fill="#E6CDBB"/>
+                                                <path d="M61.8696 132.318H45.9473V156.374H61.8696V132.318Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M149.396 132.318H133.486V156.374H149.396V132.318Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M98.4403 116.673H97.1619C79.5737 116.673 65.3301 102.322 65.3301 84.5941V43.2112C65.3301 25.1078 79.8319 10.4854 97.7946 10.4854C115.757 10.4854 130.259 25.0949 130.259 43.2112V84.5941C130.272 102.309 116.029 116.673 98.4403 116.673Z" fill="#425367"/>
+                                                <path d="M126.165 116.673H69.3067C66.9952 116.673 65.2002 114.861 65.2002 112.532V43.2112C65.2002 25.1078 79.7021 10.4854 97.6647 10.4854C115.627 10.4854 130.258 25.2243 130.258 43.3406V112.661C130.271 114.861 128.476 116.673 126.165 116.673Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M111.148 68.9502H84.959V90.0298H111.135V68.9502H111.148Z" fill="#E6CDBB"/>
+                                                <path d="M111.148 68.9502H84.959V90.0298H111.135V68.9502H111.148Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M119.359 60.5389C119.359 60.5389 123.982 59.7625 125.002 52.2571C126.022 44.7518 124.615 42.5519 121.283 43.3284L122.316 27.5542H73.8L75.2076 42.4225C75.2076 42.4225 71.2303 42.1637 71.2303 47.2104C71.2303 52.2571 70.8428 59.4907 76.486 60.7847C76.486 60.7847 79.185 79.0175 96.8894 81.088C96.9023 80.7127 115.252 81.2303 119.359 60.5389Z" fill="#E6CDBB"/>
+                                                <path d="M119.359 60.5389C119.359 60.5389 123.982 59.7625 125.002 52.2571C126.022 44.7518 124.615 42.5519 121.283 43.3284L122.316 27.5542H73.8L75.2076 42.4225C75.2076 42.4225 71.2303 42.1637 71.2303 47.2104C71.2303 52.2571 70.8428 59.4907 76.486 60.7847C76.486 60.7847 79.185 79.0175 96.8894 81.088C96.9023 80.7127 115.252 81.2303 119.359 60.5389Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M111.146 85.759L140.278 91.5821C140.278 91.5821 148.491 95.5936 149.524 104.898L152.353 143.434H43.001L46.4618 103.474C46.4618 103.474 47.2366 96.4865 54.9331 92.2162L84.9699 85.7461C84.9699 85.7461 84.9699 89.1106 98.3224 89.1106C111.662 89.1235 111.146 85.759 111.146 85.759Z" fill="#C9DCE8"/>
+                                                <path d="M111.146 85.7598L136.301 90.8065C141.311 91.7123 145.676 94.9473 147.975 99.4764C148.75 101.159 149.382 102.97 149.512 104.911L152.34 143.447H43.001L46.4618 103.488C46.8492 101.417 47.6111 99.347 48.9024 97.6648C51.214 94.5591 54.5457 92.3593 58.2777 91.5829L84.9699 85.7598C84.9699 85.7598 84.9699 89.1242 98.3224 89.1242C111.662 89.1242 111.146 85.7598 111.146 85.7598Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M85.0876 86.0176L71.2314 88.6056C71.2314 88.6056 80.4775 116.673 92.6679 101.921C94.8502 99.2037 97.5492 88.8644 97.5492 88.8644C97.5492 88.8644 88.8196 89.7702 85.0876 86.0176Z" fill="#A5CE5D"/>
+                                                <path d="M111.148 86.0176L123.984 88.6056C123.984 88.6056 114.738 116.673 102.548 101.921C100.495 99.3331 97.7959 88.9938 97.7959 88.9938C97.7959 88.9938 107.559 89.7702 111.148 86.0176Z" fill="#A5CE5D"/>
+                                                <path d="M85.0876 86.0176L71.2314 88.6056C71.2314 88.6056 80.4775 116.673 92.6679 101.921C94.8502 99.2037 97.5492 88.8644 97.5492 88.8644C97.5492 88.8644 88.8196 89.7702 85.0876 86.0176Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M111.148 86.0176L123.984 88.6056C123.984 88.6056 114.738 116.673 102.548 101.921C100.495 99.3331 97.7959 88.9938 97.7959 88.9938C97.7959 88.9938 107.559 89.7702 111.148 86.0176Z" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M67.2539 124.942L64.9424 143.563" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M129.884 124.942L132.195 143.563" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M110.76 27.0369C100.364 36.3539 87.0119 41.6465 73.1557 41.9053L70.5859 25.6135C70.5859 25.6265 106.524 15.4037 110.76 27.0369Z" fill="#425367"/>
+                                                <path d="M75.209 42.176C88.3033 40.7525 100.623 35.447 110.76 27.0488" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M109.608 25.3676C109.608 25.3676 110.125 38.0361 120.779 43.3416C120.779 43.3416 123.981 42.3064 124.11 36.3539C124.239 31.4366 125.518 23.6854 121.928 23.556C118.325 23.4266 109.608 25.3676 109.608 25.3676Z" fill="#425367"/>
+                                                <path d="M121.025 43.3411C114.866 40.2354 110.759 34.1535 109.984 27.3081" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M91.3758 72.1848C87.0111 71.0202 80.593 67.5263 77.2614 65.5853C75.7247 64.6795 71.8764 62.9973 71.2308 61.315C64.9419 45.0233 72.0056 34.1535 74.9499 45.1527C76.0992 49.4229 74.9499 51.7522 74.9499 51.7522" stroke="#133F5D" stroke-width="1.4374" stroke-miterlimit="10"/>
+                                                <path d="M91.3773 75.4066C93.1465 75.4066 94.5799 73.9573 94.5799 72.1716C94.5799 70.3858 93.1465 68.9365 91.3773 68.9365C89.6082 68.9365 88.1748 70.3858 88.1748 72.1716C88.1748 73.9573 89.6082 75.4066 91.3773 75.4066Z" fill="#133F5D"/>
+                                                <path d="M75.0787 54.9745C75.931 54.9745 76.6154 53.5252 76.6154 51.7395C76.6154 49.9537 75.931 48.5044 75.0787 48.5044C74.2264 48.5044 73.542 49.9537 73.542 51.7395C73.542 53.5252 74.2264 54.9745 75.0787 54.9745Z" fill="#133F5D"/>
+                                                <path d="M143.61 100.24L140.782 151.587H54.5458L51.7178 100.24H143.61Z" fill="white" stroke="#133F5D" stroke-width="0.4791" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M107.427 125.978C107.427 131.413 103.062 135.812 97.6774 135.812C92.2925 135.812 87.9277 131.413 87.9277 125.978C87.9277 120.543 92.2925 116.143 97.6774 116.143C103.062 116.156 107.427 120.556 107.427 125.978Z" fill="white"/>
+                                                <path d="M97.6664 136.071C92.1523 136.071 87.5293 131.542 87.5293 125.848C87.5293 120.284 92.0232 115.625 97.6664 115.625C103.18 115.625 107.803 120.155 107.803 125.848C107.803 131.542 103.323 136.071 97.6664 136.071ZM97.6664 116.415C92.5268 116.415 88.2912 120.685 88.2912 125.861C88.2912 131.037 92.5268 135.308 97.6664 135.308C102.806 135.308 107.042 131.037 107.042 125.861C107.042 120.685 102.806 116.415 97.6664 116.415Z" fill="#4294D0"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M96.6466 131.929C94.9807 130.506 94.0768 128.436 94.0768 126.365C94.0768 125.459 94.335 124.683 94.7224 123.907C95.1098 123.13 95.7555 122.483 96.5174 122.224C97.4214 121.836 98.3124 121.965 99.2163 122.483C99.6037 122.742 99.9911 123.13 100.249 123.518C100.508 123.907 100.637 124.424 100.637 124.812C100.637 125.718 100.249 126.624 99.6037 127.271C98.9581 127.918 98.067 128.177 97.1631 128.306C96.13 128.306 94.9807 127.918 94.2059 127.142C92.9275 125.977 92.6692 124.036 93.5602 122.483C93.8185 121.965 94.335 121.577 94.8387 121.189C95.8717 120.542 97.1502 120.283 98.2995 120.542C99.9653 120.801 101.386 121.836 102.148 123.26C101.373 121.836 99.9653 120.801 98.2995 120.413C97.021 120.154 95.8588 120.413 94.7095 121.06C94.193 121.448 93.6764 121.836 93.4311 122.354C93.0437 122.871 92.9146 123.518 92.7854 124.165C92.6563 125.33 93.1728 126.495 93.9347 127.271C94.8387 128.047 95.8588 128.565 97.021 128.436C98.0541 128.436 98.9452 128.047 99.72 127.4C100.495 126.753 100.869 125.718 100.869 124.683C100.869 124.165 100.74 123.648 100.482 123.13C100.224 122.612 99.8362 122.224 99.4488 121.965C98.5448 121.318 97.3955 121.318 96.3625 121.577C95.4585 121.965 94.6966 122.612 94.1801 123.518C93.6635 124.424 93.5344 125.33 93.4053 126.236C93.4053 128.565 94.4383 130.894 96.2333 132.318L96.6466 131.929Z" fill="#4294D0"/>
+                                                <path d="M96.2574 132.576C94.4624 131.024 93.3002 128.953 93.3002 126.624C92.7837 125.848 92.5254 124.942 92.5254 124.036C92.5254 123.389 92.7837 122.742 93.1711 122.224C93.5585 121.707 93.9459 121.189 94.5786 120.93C95.3535 120.413 96.2445 120.154 97.2776 120.154C97.665 120.154 97.9232 120.154 98.3106 120.283C99.9765 120.542 101.397 121.707 102.288 123.13L102.03 123.259C101.255 121.836 99.8474 120.93 98.3106 120.542C98.0524 120.542 97.7941 120.413 97.4067 120.413C96.5028 120.413 95.6117 120.671 94.8369 121.189C94.3204 121.577 93.933 121.965 93.6876 122.483C93.4293 123.001 93.1711 123.518 93.1711 124.165C93.1711 124.812 93.3002 125.33 93.5585 125.848C93.6876 125.071 93.8167 124.295 94.2042 123.518C94.7207 122.612 95.4826 121.965 96.3865 121.577C97.4196 121.189 98.698 121.318 99.5891 121.965C100.106 122.224 100.493 122.742 100.738 123.13C100.997 123.648 101.126 124.165 101.126 124.683C101.126 125.718 100.609 126.753 99.8474 127.4C99.0725 128.047 98.0524 128.436 97.0193 128.436C96.1153 128.436 95.2243 128.177 94.4495 127.659C94.7078 129.341 95.5988 130.765 96.8902 131.8L97.0193 131.929L96.2574 132.576ZM93.6876 127.012C93.8167 128.953 94.8369 130.894 96.2574 132.188L96.5157 131.929C95.1081 130.765 94.3333 129.212 94.075 127.4C93.9459 127.4 93.9459 127.271 93.8167 127.271C93.6876 127.142 93.6876 127.142 93.6876 127.012ZM97.5358 121.707C98.1815 121.707 98.6851 121.836 99.2017 122.224C99.5891 122.483 99.9765 122.871 100.235 123.259C100.493 123.648 100.622 124.165 100.622 124.683C100.622 125.589 100.235 126.495 99.5891 127.142C98.9434 127.659 98.1815 128.047 97.4067 128.177C98.1815 128.047 98.9434 127.789 99.5891 127.271C100.364 126.624 100.738 125.718 100.738 124.683C100.738 124.165 100.609 123.648 100.351 123.259C100.093 122.871 99.7053 122.483 99.3179 122.095C98.8014 121.707 98.1686 121.577 97.5229 121.577C97.1355 121.577 96.7481 121.707 96.3736 121.836C95.4697 122.224 94.7078 122.871 94.3204 123.648C93.933 124.424 93.6747 125.33 93.6747 126.236C93.8038 126.365 93.933 126.495 93.933 126.624C93.933 126.495 93.933 126.365 93.933 126.365C93.933 125.459 94.1912 124.553 94.5786 123.777C94.966 123.001 95.6117 122.354 96.5028 121.965C96.7739 121.836 97.1613 121.707 97.5358 121.707ZM99.3437 127.012C99.9894 126.495 100.377 125.589 100.377 124.683C100.377 124.295 100.248 123.777 99.9894 123.389C99.7311 123.001 99.4729 122.742 99.0855 122.483C98.3106 121.965 97.4196 121.965 96.5157 122.224C95.7409 122.483 95.1081 123.13 94.7207 123.906C94.3333 124.683 94.075 125.459 94.2042 126.365C94.2042 126.624 94.2042 126.753 94.2042 127.012C94.979 127.659 95.9991 128.047 97.0322 128.047C97.9232 127.918 98.6981 127.53 99.3437 127.012Z" fill="#4294D0"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M105.631 123.39L102.674 124.037L102.028 122.743L105.631 123.39Z" fill="#A4CC5C"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M102.028 122.743L101.383 123.778L102.416 123.648L102.028 122.743Z" fill="#A4CC5C"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M101.899 122.613L101.383 121.708L105.618 123.39L101.899 122.613Z" fill="#A4CC5C"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M93.4287 126.366C93.5578 126.625 93.8161 126.884 94.0744 127.143V126.754C93.8161 126.496 93.687 126.366 93.5578 126.237L93.4287 125.978C93.4287 126.107 93.4287 126.237 93.4287 126.366Z" fill="#4294D0"/>
+                                                <path d="M143.612 100.24L140.784 151.587H65.3301C84.1967 150.163 128.606 146.669 132.325 141.623C136.561 135.942 143.612 100.24 143.612 100.24Z" fill="url(#paint1_linear_1025_792)"/>
+                                              </g>
+                                            </g>
+                                            <defs>
+                                              <linearGradient id="paint0_linear_1025_792" x1="69.4174" y1="14.4312" x2="133.398" y2="177.872" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="white" stop-opacity="0"/>
+                                                <stop offset="1" stop-color="white"/>
+                                              </linearGradient>
+                                              <linearGradient id="paint1_linear_1025_792" x1="156.314" y1="166.911" x2="108.558" y2="129.304" gradientUnits="userSpaceOnUse">
+                                                <stop offset="0.0026" stop-color="#9FCCE8" stop-opacity="0.3"/>
+                                                <stop offset="1" stop-color="#297EB8" stop-opacity="0"/>
+                                              </linearGradient>
+                                            </defs>
+                                          </svg>
+                                    </div>
+                                    <button type="button" id="step-2-b" class="btn btn-base primary">Ya, Saya Mengerti</button>
+                                    <p class="info">Butuh bantuan? Hubungi kami 0821-1767-9137 atau klik di sini</p>
+                                </div>
+                            </div>
+                            <div id="for-step-4" class="overlayForm" style="display: none;">
+                                <div class="confirm-Pop">
+                                    <div class="title">
+                                        <h1>Selamat, Limit Anda Sudah Aktif!</h1>
+                                        <p>Anda sudah dapat melakukan transaksi di Paper.id menggunakan limit Paper Usaha.</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="./assets/images/Percepatan-Pembayaran.png" alt="" />
+                                    </div>
+                                    <button type="button" id="step-4-b" class="btn btn-base primary">Ya, Saya Mengerti</button>
+                                    <p class="info">Butuh bantuan? Hubungi kami 0821-1767-9137 atau klik di sini</p>
+                                </div>
+                            </div>
+                            <div id="for-step-4-a" class="overlayForm" style="display: none;">
+                                <div class="confirm-Pop">
+                                    <div class="title">
+                                        <h1>Siap untuk mencoba Paper.id?</h1>
+                                        <p>Paper.id dapat membantu Anda mendapatkan pembayaran lebih cepat untuk bisnis Anda!</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <img src="./assets/images/Kerja-Sama2.png" alt="" />
+                                    </div>
+                                    <button type="button" id="step-4-c" class="btn btn-base primary">Ya, Saya Mengerti</button>
+                                    <p class="info">Hubungi kami 0821-1767-9137</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mid-section">
+            <div class="mainContainer">
+                <div class="content-space align-items-center">
+                    <h1 class="font_bold">Lihat Simulasi Penggunaan Limit yang Diberikan!</h1>
+                    <div class="product-simulasi">
+                        <div class="cardPrd">
+                            <img src="./assets/images/prd-2.png" alt="prd" />
+                            <span class="crd-body">
+                                <h5>Soleil Kursi Ayun 2 Dudukan Stripe - Biru/putih</h5>
+                                <span class="crd-price">
+                                    <span class="price">Rp 5.000.000</span>
+                                    <span class="form-spinner">
+                                        <span class="spinner-control">
+                                            <button disabled class="btn spinner btn-decrement">-</button>
+                                            <input type="text" data-type="number" step="1" max="50" min="1" value="1" readonly="readonly" id="spinner1">
+                                            <button disabled class="btn spinner btn-increment">+</i></button>
+                                        </span>
+                                    </span>
+                                </span>
+                                <button type="button" disabled class="btn btn-base primary">Bayar Sekarang</button>
+                            </span>
+                        </div>
+                        <div class="cardPrd">
+                            <img src="./assets/images/prd-1.png" alt="prd" />
+                            <span class="crd-body">
+                                <h5>EVEDAL Night Lamp</h5>
+                                <span class="crd-price">
+                                    <span class="price">Rp 5.000.000</span>
+                                    <span class="form-spinner">
+                                        <span class="spinner-control">
+                                            <button class="btn spinner btn-decrement">-</button>
+                                            <input type="text" data-type="number" step="1" max="50" min="1" value="1" readonly="readonly" id="spinner1">
+                                            <button class="btn spinner btn-increment">+</i></button>
+                                        </span>
+                                    </span>
+                                </span>
+                                <button type="button" class="btn btn-base primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Bayar Sekarang</button>
+                            </span>
+                        </div>
+                        <div class="cardPrd">
+                            <img src="./assets/images/prd-3.png" alt="prd" />
+                            <span class="crd-body">
+                                <h5>Soleil Kursi Lipat - Hitam</h5>
+                                <span class="crd-price">
+                                    <span class="price">Rp 5.000.000</span>
+                                    <span class="form-spinner">
+                                        <span class="spinner-control">
+                                            <button disabled class="btn spinner btn-decrement">-</button>
+                                            <input type="text" data-type="number" step="1" max="50" min="1" value="1" readonly="readonly" id="spinner1">
+                                            <button disabled class="btn spinner btn-increment">+</i></button>
+                                        </span>
+                                    </span>
+                                </span>
+                                <button type="button" disabled class="btn btn-base primary">Bayar Sekarang</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Modal-->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <span class="label-base">Payment Paper</span>
+                    <h1 class="font-base">Pilih metode pembayaran</h1>
+                    <div class="group-col">
+                        <div class="box-col">
+                            <ul class="list-pay">
+                                <li>
+                                    <h5>Tokopedia</h5>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" class="radio-input" />
+                                        <span class="radio-input-circle"></span>
+                                        <img src="./assets/images/tokped.png" />
+                                        <span class="m-auto" style="width: 115px;">Tokopedia</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <h5>Credit Card</h5>
+                                    <label class="radio">
+                                        <input type="radio" name="radio" class="radio-input" />
+                                        <span class="radio-input-circle"></span>
+                                        <img src="./assets/images/cc.png" />
+                                        <span class="m-auto" style="width: 100px;">Kartu Kredit</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="list-pay">
+                                <li>
+                                    <h5>Paper Usaha</h5>
+                                    <label class="radio">
+                                        <input type="radio" name="radio-put" class="radio-input" />
+                                        <span class="radio-input-circle"></span>
+                                        <img src="./assets/images/koin2.png" />
+                                        <span class="mx-1" style="width: 115px;">KoinWorks</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio">
+                                        <input type="radio" name="radio-put" class="radio-input" />
+                                        <span class="radio-input-circle"></span>
+                                        <img src="./assets/images/cc.png" />
+                                        <span class="m-auto" style="width: 100px;">Kartu Kredit</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!--End-->
+        <section class="before-last">
+            <div class="mainContainer">
+                <h1>Manfaat yang Bisa Anda Rasakan</h1>
+                <div class="content-space align-items-end">
+                    <ul class="stepper-list">
+                        <li>
+                            <div class="checklist">
+                                <span></span>
+                            </div>
+                            <div class="content">
+                                <h3>One Time Integration</h3>
+                                <p>Menyediakan solusi pembiayaan dengan cara yang nyaman dan efisien bagi bisnis melalui satu proses integrasi.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checklist">
+                                <span></span>
+                            </div>
+                            <div class="content">
+                                <h3>Seamless User Experience</h3>
+                                <p>Proses pengajuan pinjaman dengan lebih mudah tanpa harus berinteraksi atau menelepon pihak pemberi pinjaman.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="checklist">
+                                <span></span>
+                            </div>
+                            <div class="content">
+                                <h3>One Submission for Multiple Financial Institutions</h3>
+                                <p>Cukup dengan satu kali pendaftaran, Anda dapat langsung diproses secara otomatis ke beberapa lembaga keuangan.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <img src="./assets/images/manfaat-ilus.png" alt="manfaat" />
+                </div>
+            </div>
+        </section>
+        
+        <footer class="last-section">
+            <div class="footer-ads">
+                <img src="./assets/images/Lady-2.png" alt="lady" />
+                <div class="content-ads">
+                    <h1>Solusi Pembayaran untuk Kelancaran Cashflow Bisnis via Paper id</h1>
+                    <a href="#" class="btn-base primary btn-mid">Daftar Gratis Sekarang</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <div class="info-nav">
+                    <div class="col-nav">
+                        <ul class="info-contact">
+                            <li>
+                                <img src="./assets/images/Logo.png" alt="paper.id" />
+                            </li>
+                            <li>Hubungi Kami</li>
+                            <li>
+                                <img src="./assets/images/phone-icon.png" width="15" height="15" />
+                                <span>
+                                    <span>+62 821 1767 9137</span>
+                                    <a href="#">+62 811 1098 746 (WA)</a>
+                                </span>
+                            </li>
+                            <li>
+                                <img src="./assets/images/email-icon.png" width="14" height="12"/>
+                                <a href="#">support@paper.id</a>
+                            </li>
+                            <li>
+                                <img src="./assets/images/address-icon.png" width="12" height="13"  />
+                                <span>
+                                    Jl. Sunter Garden Raya No.5D, RT.6/RW.12, Sunter Agung, Tj. Priok, Kota Jkt Utara, DKI Jakarta 14350
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="info-operating">
+                            <li>Jam Operasional</li>
+                            <li>
+                                <span>Senin - Jumat</span>
+                                <span>07.00 - 22.00 WIB</span>
+                            </li>
+                            <li>
+                                <span>Sabtu & Libur Nasional</span>
+                                <span>08.00 - 17.00 WIB</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-nav">
+                        <ul class="info-fitur">
+                            <li>Fitur Lainnya</li>
+                            <li>
+                                <a href="#">Order dan Penawaran</a>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Akuntansi Gratis</a>
+                                <a href="#">Financing</a>
+                            </li>
+                            <li>
+                                <a href="#">Digital Payment</a>
+                                <a href="#">PaperChain</a>
+                            </li>
+                            <li>
+                                <a href="#">Manajemen Stok</a>
+                                <a href="#">PaperTrade</a>
+                            </li>
+                            <li>
+                                <a href="#">Laporan Keuangan</a>
+                                <a href="#">Enterprise Solution</a>
+                            </li>
+                            <li>
+                                <a href="#">One Click Share</a>
+                                <a href="#">PayPer</a>
+                            </li>
+                            <li><a href="#">Template Invoice</a></li>
+                        </ul>
+                        <ul class="info-solusi">
+                            <li>Solusi</li>
+                            <li>
+                                <a href="#">Jual Beli</a>
+                            </li>
+                            <li>
+                                <a href="#">Jasa</a>
+                            </li>
+                            <li>
+                                <a href="#">F&B</a>
+                            </li>
+                        </ul>
+                        <ul class="info-perusahaan">
+                            <li>Perusahaan</li>
+                            <li>
+                                <a href="#">Tentang Kami</a>
+                            </li>
+                            <li>
+                                <a href="#">Cara Kerja</a>
+                            </li>
+                            <li>
+                                <a href="#">Karir</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Help Center</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="app-section">
+                    <ul>
+                        <li>
+                            <h5>Download Paper.id apps</h5>
+                            <a href="#" title=""><img src="./assets/images/playstore-icon.png" /></a>
+                            
+                        </li>
+                        <li>
+                            <h5>Keamanan</h5>
+                            <a href="#" title=""><img src="./assets/images/secure-white.png" /></a>
+                            <a href="#" title=""><img src="./assets/images/kan_logo_27001.png" /></a>
+                            <a href="#" title=""><img src="./assets/images/bv_certification_ISO27001.png" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li>Copyright © 2023 Paper.id (PT Pakar Digital Global)</li>
+                        <li>
+                            <a href="#"><img src="./assets/images/youtube-icon.png" /></a>
+                            <a href="#"><img src="./assets/images/facebook-icon.png" /></a>
+                            <a href="#"><img src="./assets/images/linkedin-icon.png" /></a>
+                            <a href="#"><img src="./assets/images/instagram-icon.png" /></a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms & Condition</a>
+                            <a href="#">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script type="text/javascript" src="./assets/js/common.js"></script>
+    </body>
+</html>
