@@ -661,7 +661,7 @@ ul {
     margin-bottom: 0;
 }
 
-  .last-section .footer-ads {
+  .last-section .footer-cont {
     max-width: 1267px;
     margin: auto;
     display: flex;
@@ -671,7 +671,7 @@ ul {
     box-sizing: border-box;
   }
 
-  .last-section .footer-ads .content-ads h1 {
+  .last-section .footer-cont .content-cont h1 {
     font-size: 37px;
     font-weight: 700;
     color: #fff;
@@ -1121,15 +1121,15 @@ h1.font-base {
     .product-simulasi {
         margin-top: 115px;
     }
-    .last-section .footer-ads {
+    .last-section .footer-cont {
         flex-direction: column;
         width: 100%;
         padding: 0 24px;
     }
-    .last-section .footer-ads .content-ads h1 {
+    .last-section .footer-cont .content-cont h1 {
         text-align: center;
     }
-    .content-ads .btn-base {
+    .content-cont .btn-base {
         margin: auto;
     }
     .last-section .footer-section {
@@ -1328,15 +1328,15 @@ h1.font-base {
         content: none;
     }
 
-    .last-section .footer-ads {
+    .last-section .footer-cont {
         flex-direction: column;
         width: 100%;
         padding: 0 24px;
     }
-    .last-section .footer-ads .content-ads h1 {
+    .last-section .footer-cont .content-cont h1 {
         text-align: center;
     }
-    .content-ads .btn-base {
+    .content-cont .btn-base {
         margin: auto;
     }
     .last-section .footer-section {
